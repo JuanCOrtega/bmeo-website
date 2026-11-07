@@ -12,3 +12,6 @@ node_modules/
 
 # Notas locales
 levantar local.txt
+
+# Las APK se publican en GitHub Releases (Firebase Spark no permite ejecutables)
+downloads/
