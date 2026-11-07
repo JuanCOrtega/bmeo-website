@@ -1,0 +1,14 @@
+# Firebase
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log*
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
+
+# Notas locales
+levantar local.txt

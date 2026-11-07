@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMEO | Agenda, clientes y vitrina para tu negocio</title>
+    <meta
+      name="description"
+      content="BMEO conecta tu negocio con tus clientes: agenda en línea, equipo, vitrina personalizada, fidelización y avisos en la app BMEO. Paga solo por los módulos que usas."
+    />
+    <meta name="theme-color" content="#6d28d9" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BMEO · Tu negocio y tus clientes en un solo lugar" />
+    <meta
+      property="og:description"
+      content="Agenda, equipo, vitrina, fidelización y avisos. Una app para tu negocio y otra para tus clientes."
+    />
+    <meta property="og:locale" content="es_CO" />
+    <link rel="icon" type="image/svg+xml" href="assets/bmeo-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+      <div class="container nav">
+        <a href="#inicio" class="brand" aria-label="BMEO, ir al inicio">
+          <img src="assets/bmeo-logo.svg" alt="" width="32" height="32" />
+          <span>BMEO</span>
+        </a>
+
+        <nav class="main-nav" id="menu" aria-label="Navegación principal" data-menu>
+          <a href="#negocios">Para negocios</a>
+          <a href="#clientes">Para clientes</a>
+          <a href="#vitrina">Mi vitrina</a>
+          <a href="#modulos">Módulos</a>
+          <a href="#descargas">Descargas</a>
+          <a href="#preguntas">Preguntas</a>
+          <a class="button button-primary nav-cta-mobile" href="https://bmeo.onrender.com" target="_blank" rel="noopener">Abrir BMEO Negocios</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button button-primary button-small header-cta" href="https://bmeo.onrender.com" target="_blank" rel="noopener">Abrir BMEO</a>
+          <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú" data-menu-toggle>
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- ─────────────── HERO ─────────────── -->
+      <section class="hero" id="inicio">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="eyebrow-dot"></span>Hecho en Colombia para negocios de servicios</span>
+            <h1>Tu negocio y tus clientes, <span class="text-gradient">en un solo lugar.</span></h1>
+            <p class="lead">
+              Con BMEO tus clientes te encuentran, te siguen y agendan desde su celular. Tú manejas la agenda, el
+              equipo y las promociones desde BMEO Negocios. Activas solo los módulos que necesitas.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://bmeo.onrender.com" target="_blank" rel="noopener">
+                Crear mi tienda
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4l6 6-6 6" /></svg>
+              </a>
+              <a class="button button-secondary" href="#descargas">Descargar las apps</a>
+            </div>
+            <ul class="hero-checks" aria-label="Lo que incluye">
+              <li>Agenda en tiempo real</li>
+              <li>Vitrina con tu marca</li>
+              <li>Avisos directo al celular</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Ejemplo de las apps BMEO" role="img">
+            <!-- Teléfono: app de clientes -->
+            <div class="phone phone-client" aria-hidden="true">
+              <div class="phone-notch"></div>
+              <div class="sf-banner">
+                <div class="sf-logo">BN</div>
+                <div>
+                  <strong>Barbería Norte</strong>
+                  <small>Cortes, barba y cuidado · Pasto</small>
+                </div>
+              </div>
+              <div class="sf-actions">
+                <span class="sf-btn sf-btn-primary">Agendar</span>
+                <span class="sf-btn">♡ Seguir</span>
+              </div>
+              <div class="sf-promo">
+                <span class="sf-tag">-20%</span>
+                <div>
+                  <strong>Corte + barba</strong>
+                  <small><s>$45.000</s> <b>$36.000</b> · hasta el viernes</small>
+                </div>
+              </div>
+              <div class="sf-section-title">Servicios</div>
+              <div class="sf-service"><span>Corte clásico</span><small>40 min</small><b>$25.000</b></div>
+              <div class="sf-service"><span>Arreglo de barba</span><small>30 min</small><b>$20.000</b></div>
+              <div class="sf-service"><span>Cejas</span><small>15 min</small><b>$10.000</b></div>
+              <div class="sf-tabbar">
+                <span class="active">Explorar</span><span>Tiendas</span><span>Citas</span><span>Avisos</span><span>Perfil</span>
+              </div>
+            </div>
+
+            <!-- Tarjeta: agenda de BMEO Negocios -->
+            <div class="agenda-card" aria-hidden="true">
+              <div class="agenda-head">
+                <div>
+                  <small>BMEO Negocios</small>
+                  <strong>Agenda de hoy</strong>
+                </div>
+                <span class="chip chip-live"><i></i>En vivo</span>
+              </div>
+              <ul class="agenda-list">
+                <li>
+                  <time>9:00</time>
+                  <div><strong>Laura M.</strong><small>Corte clásico · Andrés</small></div>
+                  <span class="chip chip-progress">En curso</span>
+                </li>
+                <li>
+                  <time>10:30</time>
+                  <div><strong>Camilo R.</strong><small>Corte + barba · Sofía</small></div>
+                  <span class="chip chip-ok">Confirmada</span>
+                </li>
+                <li>
+                  <time>11:15</time>
+                  <div><strong>Daniela P.</strong><small>Cejas · Andrés</small></div>
+                  <span class="chip chip-pending">Pendiente</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Aviso flotante -->
+            <div class="toast-card" aria-hidden="true">
+              <span class="toast-icon">🔔</span>
+              <div>
+                <strong>Nueva cita desde la app</strong>
+                <small>Daniela agendó Cejas a las 11:15 a. m.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── CÓMO FUNCIONA ─────────────── -->
+      <section class="flow-band" aria-label="Cómo funciona">
+        <div class="container flow-grid">
+          <div class="flow-step">
+            <span class="flow-num">1</span>
+            <div>
+              <strong>Crea tu tienda</strong>
+              <p>Elige los módulos y arma tu vitrina con tus colores, logo y servicios.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">2</span>
+            <div>
+              <strong>Tus clientes te encuentran</strong>
+              <p>Apareces en Explorar de la app BMEO. Te siguen y agendan solos.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">3</span>
+            <div>
+              <strong>Atiendes y fidelizas</strong>
+              <p>Confirmas la cita, registras el servicio y suman sellos o puntos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── NEGOCIOS ─────────────── -->
+      <section id="negocios" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag">BMEO Negocios · para dueños y equipo</span>
+            <h2>Todo lo que pasa en tu negocio, ¡claro como el agua!.</h2>
+            <p>Sitio web y aplicación Android con la misma cuenta. Lo que cambias en una aparece en la otra.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-wide">
+              <div class="feature-icon icon-violet">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3" /><path d="M3 10h18M8 3v4M16 3v4" /></svg>
+              </div>
+              <h3>Agenda, equipo y roles</h3>
+              <p>
+                Permite agendar citas en el horario y con el personal preferido, disponibilidad real y comisiones. Las citas que llegan
+                desde la app quedan <em>pendientes</em> para que las confirmes, y el equipo recibe el aviso al instante.
+              </p>
+              <ul class="mini-list">
+                <li><b>Profesional:</b> ve solo sus citas</li>
+                <li><b>Recepción:</b> maneja toda la agenda</li>
+                <li><b>Administrador:</b> además clientes, servicios e inventario</li>
+              </ul>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="4" /><path d="M2 21a7 7 0 0114 0M17 11a3 3 0 100-6M22 21a6 6 0 00-4-5.6" /></svg>
+              </div>
+              <h3>Clientes</h3>
+              <p>Directorio con historial, búsqueda y listas. Ves quién tiene la app y quién llegó por ella.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-amber">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 12a2 2 0 01-2 1.8h-9a2 2 0 01-2-1.8L4 7zM9 7V5a3 3 0 016 0v2" /></svg>
+              </div>
+              <h3>Servicios y productos</h3>
+              <p>Categorías, adicionales, precios y duración. Productos con stock e insumos internos.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-pink">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z" /></svg>
+              </div>
+              <h3>Fidelización</h3>
+              <p>Tarjetas de sellos, visitas o puntos. Se suman solas al completar una cita o una venta.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-blue">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0112 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 003.4 0" /></svg>
+              </div>
+              <h3>Notificaciones</h3>
+              <p>Recordatorios de cita, cumpleaños y campañas que llegan al buzón de la app de tus clientes.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-green">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" /></svg>
+              </div>
+              <h3>Reportes</h3>
+              <p>Ingresos, servicios por empleado y movimiento de inventario, con exportación.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-violet">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><path d="M14 14h3v3M21 14v7h-7M17 21v-1" /></svg>
+              </div>
+              <h3>Llegada con QR</h3>
+              <p>Muestras el código, el cliente lo escanea y el servicio empieza. Al terminar suma en su tarjeta.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9M3 9v11h18V9M3 9h18M9 20v-6h6v6" /></svg>
+              </div>
+              <h3>Varias tiendas</h3>
+              <p>Una sola cuenta para todas tus sedes o marcas, cada una con sus módulos, equipo y vitrina.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── CLIENTES ─────────────── -->
+      <section id="clientes" class="section alt-section">
+        <div class="container split">
+          <div class="split-copy">
+            <span class="section-tag">App BMEO · para tus clientes</span>
+            <h2>Tus clientes agendan en tres toques.</h2>
+            <p>
+              La app BMEO reúne todas las tiendas que el cliente sigue: citas, avisos y tarjetas de fidelización en
+              un solo lugar. Sin cuenta se puede explorar; para seguir y agendar se confirma el correo.
+            </p>
+
+            <ol class="steps">
+              <li><b>Elige el servicio</b><span>con precio y duración</span></li>
+              <li><b>Escoge el día</b><span>solo aparecen horas libres</span></li>
+              <li><b>Elige profesional y hora</b><span>y la cita queda enviada</span></li>
+            </ol>
+          </div>
+
+          <div class="client-features">
+            <div class="cf-item">
+              <span class="cf-emoji" aria-hidden="true">🧭</span>
+              <div><strong>Explorar</strong><p>Busca tiendas por nombre, servicio o ciudad.</p></div>
+            </div>
+            <div class="cf-item">
+              <span class="cf-emoji" aria-hidden="true">♡</span>
+              <div><strong>Mis tiendas</strong><p>Sigue tus negocios favoritos y ve sus publicaciones.</p></div>
+            </div>
+            <div class="cf-item">
+              <span class="cf-emoji" aria-hidden="true">📅</span>
+              <div><strong>Mis citas</strong><p>Próximas e historial en todas las tiendas. Cancela si no puedes ir.</p></div>
+            </div>
+            <div class="cf-item">
+              <span class="cf-emoji" aria-hidden="true">📷</span>
+              <div><strong>Llegada con QR</strong><p>Escanea el código del negocio y tu servicio empieza.</p></div>
+            </div>
+            <div class="cf-item">
+              <span class="cf-emoji" aria-hidden="true">⭐</span>
+              <div><strong>Tarjetas y reseñas</strong><p>Mira cuánto te falta para el premio y califica tu visita.</p></div>
+            </div>
+            <div class="cf-item">
+              <span class="cf-emoji" aria-hidden="true">🔔</span>
+              <div><strong>Avisos</strong><p>Recordatorios, promociones y novedades de cada tienda.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── VITRINA ─────────────── -->
+      <section id="vitrina" class="section">
+        <div class="container split split-reverse">
+          <div class="vitrina-demo" aria-label="Vista previa de una vitrina" role="img">
+            <div class="vd-swatches" aria-hidden="true">
+              <button type="button" class="vd-swatch is-active" style="--c1:#6d28d9;--c2:#f59e0b" data-theme-pick="#6d28d9,#f59e0b" aria-label="Violeta"></button>
+              <button type="button" class="vd-swatch" style="--c1:#0f766e;--c2:#f97316" data-theme-pick="#0f766e,#f97316" aria-label="Verde"></button>
+              <button type="button" class="vd-swatch" style="--c1:#be185d;--c2:#facc15" data-theme-pick="#be185d,#facc15" aria-label="Rosa"></button>
+              <button type="button" class="vd-swatch" style="--c1:#111827;--c2:#d4a373" data-theme-pick="#111827,#d4a373" aria-label="Negro"></button>
+            </div>
+            <div class="vd-card" data-vitrina>
+              <div class="vd-banner">
+                <div class="vd-logo">SL</div>
+                <strong>Spa Lumina</strong>
+                <small>Masajes y cuidado facial</small>
+                <span class="vd-cta">Agendar</span>
+              </div>
+              <div class="vd-body">
+                <div class="vd-promo"><span>-15%</span> Masaje relajante · esta semana</div>
+                <div class="vd-gallery"><i></i><i></i><i></i></div>
+                <div class="vd-row"><span>Masaje relajante</span><b>$80.000</b></div>
+                <div class="vd-row"><span>Limpieza facial</span><b>$65.000</b></div>
+              </div>
+            </div>
+            <p class="vd-hint">Toca un color para ver el cambio</p>
+          </div>
+
+          <div class="split-copy">
+            <span class="section-tag">Mi vitrina · incluida en todas las tiendas</span>
+            <h2>Tu tienda se ve como tu marca, no como una plantilla.</h2>
+            <p>
+              Diseña cómo te ven tus clientes en la app BMEO. Editas un borrador y lo publicas cuando esté listo.
+            </p>
+            <ul class="check-list">
+              <li>Colores, logo y tipografías (Poppins, Playfair, Bebas Neue y más)</li>
+              <li>Portada con degradado, foto, color sólido o estilo mínimo</li>
+              <li>Botón principal: agendar, ver productos o WhatsApp</li>
+              <li>Secciones en el orden que quieras: promociones, servicios, productos, galería, equipo e información</li>
+              <li>Promociones con precio antes y ahora, descuento y fecha límite</li>
+              <li>Publicaciones para tus seguidores y reseñas de tus clientes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── MÓDULOS ─────────────── -->
+      <section id="modulos" class="section alt-section">
+        <div class="container">
+          <div class="section-head center">
+            <span class="section-tag">Módulos</span>
+            <h2>Activa solo lo que necesitas.</h2>
+            <p>Toda tienda empieza con la base. Los demás módulos los activas o quitas cuando quieras.</p>
+          </div>
+
+          <div class="pricing">
+            <div class="pricing-modules">
+              <div class="module-row module-core">
+                <div>
+                  <strong>Base: Clientes, Servicios y Mi vitrina</strong>
+                  <p>Tu directorio de clientes, lo que ofreces y cómo te ven en la app BMEO.</p>
+                </div>
+                <span class="module-badge">Siempre incluido</span>
+              </div>
+              <div class="module-row">
+                <div>
+                  <strong>Agenda y equipo</strong>
+                  <p>Citas, empleados, horarios, comisiones y accesos.</p>
+                </div>
+                <span class="module-badge module-badge-optional">Opcional</span>
+              </div>
+              <div class="module-row">
+                <div>
+                  <strong>Productos y ventas</strong>
+                  <p>Productos con stock, insumos internos y registro de ventas.</p>
+                </div>
+                <span class="module-badge module-badge-optional">Opcional</span>
+              </div>
+              <div class="module-row">
+                <div>
+                  <strong>Fidelización</strong>
+                  <p>Tarjetas de sellos, visitas o puntos con premios.</p>
+                </div>
+                <span class="module-badge module-badge-optional">Opcional</span>
+              </div>
+              <div class="module-row">
+                <div>
+                  <strong>Notificaciones</strong>
+                  <p>Recordatorios y campañas en la app de tus clientes.</p>
+                </div>
+                <span class="module-badge module-badge-optional">Opcional</span>
+              </div>
+              <div class="module-row">
+                <div>
+                  <strong>Reportes</strong>
+                  <p>Analítica de ingresos, equipo e inventario. Se usa junto con Agenda y equipo o Productos y ventas.</p>
+                </div>
+                <span class="module-badge module-badge-optional">Opcional</span>
+              </div>
+            </div>
+
+            <aside class="pricing-total">
+              <span class="total-label">Hecho a la medida de tu negocio</span>
+              <strong class="total-title">Arma tu tienda con los módulos que usas.</strong>
+              <p class="total-note">Al desactivar un módulo tus datos no se borran: vuelven cuando lo reactivas.</p>
+              <a class="button button-primary button-block" href="https://bmeo.onrender.com" target="_blank" rel="noopener">Crear mi tienda</a>
+              <a class="button button-ghost button-block" href="https://wa.me/573105961186?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20los%20m%C3%B3dulos%20de%20BMEO." target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── DESCARGAS ─────────────── -->
+      <section id="descargas" class="section">
+        <div class="container">
+          <div class="section-head center">
+            <span class="section-tag">Descargas</span>
+            <h2>Elige tu app.</h2>
+            <p>Disponibles para Android. Desde un computador usa la versión web de BMEO Negocios.</p>
+          </div>
+
+          <div class="download-grid">
+            <article class="download-card dl-clientes">
+              <div class="dl-icon" aria-hidden="true">B</div>
+              <h3>BMEO</h3>
+              <p class="dl-for">Para clientes</p>
+              <p>Explora tiendas, negocios y servicios cerca de ti, compara reseñas, descubre productos, encuentra las mejores ofertas y agenda citas. Recibe notificaciones, acumula beneficios con tus tarjetas de fidelización y disfruta de nuevas experiencias, todo desde un solo lugar y sin salir de casa.</p>
+              <a class="button button-primary button-block" href="downloads/bmeo-clientes.apk" download>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10M5 9l5 5 5-5M4 17h12" /></svg>
+                Descargar APK · 8,5 MB
+              </a>
+            </article>
+
+            <article class="download-card dl-negocios">
+              <div class="dl-icon" aria-hidden="true">N</div>
+              <h3>BMEO Negocios</h3>
+              <p class="dl-for">Para dueños y empleados</p>
+              <p>Administra tu negocio desde el celular y mantén todo bajo control. Organiza tu agenda, equipo, clientes, inventario y vitrina. Automatiza procesos, comunica promociones y fideliza clientes. Dale más visibilidad a tu tienda en una red de negocios.</p>
+              <div class="dl-buttons">
+                <a class="button button-primary button-block" href="downloads/bmeo-negocios.apk" download>
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10M5 9l5 5 5-5M4 17h12" /></svg>
+                  Descargar APK · 8,3 MB
+                </a>
+                <a class="button button-secondary button-block" href="https://bmeo.onrender.com" target="_blank" rel="noopener">Usar en la web</a>
+              </div>
+            </article>
+          </div>
+
+          <details class="install-help">
+            <summary>¿Cómo instalo la APP?</summary>
+            <ol>
+              <li>Descarga el archivo desde tu celular Android.</li>
+              <li>Ábrelo desde las notificaciones o la carpeta <em>Descargas</em>.</li>
+              <li>Si Android lo pide, permite <em>Instalar apps desconocidas</em> para tu navegador.</li>
+              <li>Toca <em>Instalar</em> y abre la app.</li>
+            </ol>
+          </details>
+        </div>
+      </section>
+
+      <!-- ─────────────── PREGUNTAS ─────────────── -->
+      <section id="preguntas" class="section alt-section">
+        <div class="container faq-wrap">
+          <div class="section-head">
+            <span class="section-tag">Preguntas frecuentes</span>
+            <h2>Lo que más nos preguntan.</h2>
+          </div>
+
+          <div class="faq">
+            <details>
+              <summary>¿Para qué tipo de negocios sirve BMEO?</summary>
+              <p>Para negocios que atienden con cita o venden a clientes recurrentes: barberías, peluquerías, spas, centros de estética, consultorios, talleres y tiendas de barrio, entre otros.</p>
+            </details>
+            <details>
+              <summary>¿Puedo tener varias tiendas con la misma cuenta?</summary>
+              <p>Sí. Una cuenta puede crear y operar varias tiendas independientes, cada una con sus propios módulos, equipo y vitrina.</p>
+            </details>
+            <details>
+              <summary>¿Mis clientes tienen que instalar algo?</summary>
+              <p>Para agendar desde el celular y recibir avisos usan la app BMEO. Si un cliente ya está registrado en tu tienda con su correo, al crear su cuenta queda enlazado contigo automáticamente.</p>
+            </details>
+            <details>
+              <summary>¿Mis empleados necesitan correo?</summary>
+              <p>No. Tú les creas un usuario dentro de la tienda y eliges su perfil: profesional, recepción o administrador. Entran con usuario y contraseña.</p>
+            </details>
+            <details>
+              <summary>¿Qué pasa con mis datos si quito un módulo?</summary>
+              <p>No se borran. Se ocultan y vuelven a aparecer cuando reactivas el módulo.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── VELTORCODE ─────────────── -->
+      <section id="veltorcode" class="section company-section" aria-labelledby="veltorcode-title">
+        <div class="container">
+          <div class="company-card">
+            <div class="company-logo-wrap">
+              <img
+                class="company-logo"
+                src="assets/Logo%20tecnol%C3%B3gico%20Veltorcode%20en%20azul.png"
+                alt="Veltorcode S.A.S. · Engineering, Technology, Innovation"
+                width="560"
+                height="150"
+                loading="lazy"
+              />
+            </div>
+            <div class="company-copy">
+              <span class="company-tag">Quién está detrás de BMEO</span>
+              <h2 id="veltorcode-title">Un producto de Veltorcode S.A.S.</h2>
+              <p>
+                Diseñamos y construimos BMEO completo: la plataforma, la web y las apps móviles para negocios y
+                clientes. También desarrollamos software a la medida para empresas.
+              </p>
+              <ul class="company-pills" aria-label="Servicios de Veltorcode">
+                <li>Software a la medida</li>
+                <li>Apps móviles</li>
+                <li>Plataformas web</li>
+                <li>Automatización</li>
+              </ul>
+              <a class="button company-button" href="#contacto">Hablar con Veltorcode</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────── CONTACTO ─────────────── -->
+      <section id="contacto" class="section">
+        <div class="container contact-box">
+          <div class="contact-copy">
+            <span class="section-tag">Contacto</span>
+            <h2>¿Quieres ver BMEO funcionando en tu negocio?</h2>
+            <p>Escríbenos y te mostramos la plataforma, te ayudamos a crear tu tienda o conversamos sobre un desarrollo a la medida.</p>
+            <div class="contact-actions">
+              <a class="button button-whatsapp" href="https://wa.me/573105961186?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20BMEO." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003.3 17.2L2 22l4.9-1.3A11 11 0 0020.5 3.5zM12 20a8.9 8.9 0 01-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3A9 9 0 1112 20zm4.9-6.7c-.3-.1-1.6-.8-1.8-.9-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a7.3 7.3 0 01-3.6-3.2c-.3-.5.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c0-.1-.2-.2-.5-.3z" /></svg>
+                Escribir por WhatsApp
+              </a>
+              <a class="button button-secondary" href="tel:+573105961186">Llamar</a>
+            </div>
+          </div>
+
+          <ul class="contact-list" aria-label="Información de contacto">
+            <li>
+              <a class="contact-item" href="tel:+573105961186">
+                <span class="contact-label">Teléfono</span>
+                <strong>+57 310 596 1186</strong>
+              </a>
+            </li>
+            <li>
+              <a class="contact-item" href="mailto:jortega.develop@gmail.com">
+                <span class="contact-label">Correo</span>
+                <strong>jortega.develop@gmail.com</strong>
+              </a>
+            </li>
+            <li>
+              <a class="contact-item" href="https://www.linkedin.com/in/juan-camilo-ortega-burbano" target="_blank" rel="noopener">
+                <span class="contact-label">LinkedIn</span>
+                <strong>Juan Camilo Ortega Burbano</strong>
+              </a>
+            </li>
+            <li>
+              <a class="contact-item" href="https://github.com/JuanCOrtega" target="_blank" rel="noopener">
+                <span class="contact-label">GitHub</span>
+                <strong>JuanCOrtega</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="brand">
+            <img src="assets/bmeo-logo.svg" alt="" width="28" height="28" />
+            <span>BMEO</span>
+          </a>
+          <p>Business Modular Enterprise Operations</p>
+        </div>
+        <nav class="footer-links" aria-label="Enlaces del pie de página">
+          <a href="#negocios">Para negocios</a>
+          <a href="#clientes">Para clientes</a>
+          <a href="#modulos">Módulos</a>
+          <a href="#descargas">Descargas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer-company">
+          <span>Desarrollado por</span>
+          <a href="#veltorcode">Veltorcode S.A.S.</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year>2026</span> Veltorcode S.A.S. · BMEO</span>
+      </div>
+    </footer>
+
+    <a class="wa-float" href="https://wa.me/573105961186?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20BMEO." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003.3 17.2L2 22l4.9-1.3A11 11 0 0020.5 3.5zM12 20a8.9 8.9 0 01-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3A9 9 0 1112 20zm4.9-6.7c-.3-.1-1.6-.8-1.8-.9-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a7.3 7.3 0 01-3.6-3.2c-.3-.5.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c0-.1-.2-.2-.5-.3z" /></svg>
+    </a>
+  </body>
+</html>
