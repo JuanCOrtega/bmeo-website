@@ -9,8 +9,6 @@ on:
 
 jobs:
   build_and_deploy:
-    # Se activa cuando existan la variable FIREBASE_PROJECT_ID y el secreto FIREBASE_SERVICE_ACCOUNT en GitHub.
-    if: ${{ vars.FIREBASE_PROJECT_ID != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,5 +19,5 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: ${{ vars.FIREBASE_PROJECT_ID }}
+          projectId: bmeo-wesite
           channelId: live

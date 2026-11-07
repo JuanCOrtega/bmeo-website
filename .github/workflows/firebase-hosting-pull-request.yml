@@ -4,8 +4,6 @@ on: pull_request
 
 jobs:
   build_and_preview:
-    # Se activa cuando existan la variable FIREBASE_PROJECT_ID y el secreto FIREBASE_SERVICE_ACCOUNT en GitHub.
-    if: ${{ vars.FIREBASE_PROJECT_ID != '' }}
     runs-on: ubuntu-latest
     permissions:
       checks: write
@@ -20,4 +18,4 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: ${{ vars.FIREBASE_PROJECT_ID }}
+          projectId: bmeo-wesite
