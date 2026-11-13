@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "bmeo-site",
     "public": ".",
     "ignore": [
       "firebase.json",
