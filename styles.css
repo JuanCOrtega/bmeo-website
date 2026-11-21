@@ -1653,3 +1653,121 @@ p {
     width: 100%;
   }
 }
+
+/* ─────────────── Páginas legales (privacidad y términos) ─────────────── */
+.legal-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.legal-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+}
+.legal {
+  padding: 2.5rem 0 4rem;
+  background: var(--bg-alt);
+}
+.legal .container {
+  max-width: 820px;
+}
+.legal-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(1.25rem, 4vw, 2.75rem);
+  box-shadow: var(--shadow-sm);
+}
+.legal h1 {
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+.legal .legal-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 1.75rem;
+}
+.legal h2 {
+  font-size: 1.2rem;
+  margin: 2.25rem 0 0.75rem;
+  padding-top: 0.25rem;
+  scroll-margin-top: 1rem;
+}
+.legal h3 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem;
+}
+.legal p,
+.legal li {
+  line-height: 1.7;
+  color: var(--text);
+}
+.legal ul {
+  padding-left: 1.25rem;
+}
+.legal li + li {
+  margin-top: 0.35rem;
+}
+.legal a {
+  color: var(--primary);
+}
+.legal-summary {
+  background: var(--primary-soft);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+.legal-summary p {
+  margin: 0;
+}
+.legal-toc {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  columns: 2 240px;
+}
+.legal-toc a {
+  display: block;
+  padding: 0.2rem 0;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  margin: 0.75rem 0;
+}
+.legal th,
+.legal td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 0.5rem;
+}
+.legal th {
+  color: var(--muted);
+  font-weight: 600;
+}
+.legal-table-wrap {
+  overflow-x: auto;
+}
+.legal-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.legal-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  justify-content: space-between;
+}
+.legal-footer a {
+  color: var(--muted);
+}
