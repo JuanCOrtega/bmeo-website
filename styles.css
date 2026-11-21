@@ -1,10 +1,10 @@
-/* BMEO · sitio público. Sistema "Modular Precision": Plus Jakarta Sans para títulos, Inter para texto,
-   índigo-violeta de marca, bordes finos y sombras suaves. Claro y oscuro. */
+/* BMEO · sitio público. Plus Jakarta Sans para títulos, Inter para texto, índigo-violeta de marca,
+   bordes finos y sombras suaves. Siempre en modo claro, con los colores de la marca. */
 
 :root {
   --bg: #ffffff;
-  --bg-subtle: #f8fafc;
-  --bg-tint: #f3f4ff;
+  --bg-subtle: #f6f7ff;
+  --bg-tint: #eef0ff;
   --surface: #ffffff;
   --surface-2: #f1f5f9;
   --text: #0f172a;
@@ -40,38 +40,6 @@
   --font-head: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0a0f1f;
-    --bg-subtle: #0e1426;
-    --bg-tint: #121933;
-    --surface: #111830;
-    --surface-2: #19223d;
-    --text: #f1f5f9;
-    --text-2: #cbd5e1;
-    --muted: #94a3b8;
-    --border: #232d4a;
-    --border-soft: #1a2240;
-    --primary: #818cf8;
-    --primary-2: #a78bfa;
-    --primary-ink: #c7d2fe;
-    --primary-soft: rgba(129, 140, 248, 0.14);
-    --primary-line: rgba(129, 140, 248, 0.35);
-    --grad: linear-gradient(100deg, #6366f1 0%, #8b5cf6 100%);
-    --emerald-ink: #6ee7b7;
-    --emerald-soft: rgba(16, 185, 129, 0.14);
-    --emerald-line: rgba(16, 185, 129, 0.35);
-    --gold-ink: #fcd34d;
-    --gold-soft: rgba(245, 158, 11, 0.14);
-    --coral-soft: rgba(244, 63, 94, 0.14);
-    --sky-soft: rgba(14, 165, 233, 0.14);
-    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-2: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
-    --shadow-3: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
-    color-scheme: dark;
-  }
 }
 
 /* ── Base ─────────────────────────────────────────────────────────── */
@@ -2405,4 +2373,267 @@ button {
 }
 .agenda-card ul {
   grid-template-columns: minmax(0, 1fr);
+}
+
+/* ══ Hero según la marca BMEO ═══════════════════════════════════════ */
+.hero {
+  padding: 4rem 0 5.5rem;
+  background:
+    radial-gradient(620px 420px at 0% 0%, rgba(99, 102, 241, 0.1), transparent 70%),
+    radial-gradient(560px 460px at 100% 20%, rgba(124, 58, 237, 0.12), transparent 70%),
+    radial-gradient(480px 320px at 70% 100%, rgba(14, 165, 233, 0.08), transparent 70%),
+    linear-gradient(180deg, #f8f8ff 0%, #f3f4ff 100%);
+}
+.hero-grid {
+  grid-template-columns: 1.2fr 1fr;
+}
+.hero-badge {
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+.hero-badge .flag {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 18px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #fcd116 0 50%, #003893 50% 75%, #ce1126 75%);
+  color: transparent;
+  font-size: 0;
+}
+.hero h1 {
+  font-size: clamp(2.3rem, 4.6vw, 3.55rem);
+  line-height: 1.12;
+}
+.hero h1 .text-gradient {
+  display: block;
+}
+.hero .lead {
+  max-width: 36rem;
+  font-size: 1.08rem;
+}
+.hero-checks {
+  font-size: 0.86rem;
+}
+.hero-client strong {
+  color: var(--emerald-ink);
+}
+.icon-android {
+  color: #16a34a;
+}
+.hero-visual {
+  min-height: 500px;
+  padding-top: 0;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+.hero-visual::before {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(124, 58, 237, 0.16), rgba(14, 165, 233, 0.14));
+}
+.phone {
+  width: 300px;
+}
+.sf-head .mini-btn {
+  margin-left: auto;
+}
+.sf-heart {
+  width: 18px;
+  height: 18px;
+  color: var(--coral);
+}
+.sf-promo {
+  justify-content: space-between;
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+}
+.sf-promo .off {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+.sf-promo-ic {
+  width: 26px;
+  height: 26px;
+  color: var(--gold);
+}
+.sf-tabbar span {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+}
+.sf-tabbar .icon {
+  width: 16px;
+  height: 16px;
+}
+.agenda-card {
+  width: 300px;
+  padding: 1rem;
+}
+.agenda-card header strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.agenda-card li {
+  border-left: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+}
+.agenda-card li strong {
+  font-size: 0.78rem;
+}
+.agenda-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 12px;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-line);
+}
+.agenda-notice .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--primary);
+}
+.agenda-notice strong {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--primary-ink);
+}
+.agenda-notice small {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+@media (min-width: 961px) {
+  .agenda-card {
+    width: 300px;
+    right: -2%;
+    top: 36%;
+  }
+}
+@media (max-width: 960px) {
+  .hero-visual {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .hero h1 .text-gradient {
+    display: inline;
+  }
+}
+
+/* ══ Más color en las secciones ═════════════════════════════════════ */
+.section-head h2,
+.split-copy h2 {
+  color: #111332;
+}
+.card {
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--accent, var(--grad));
+  opacity: 0.9;
+}
+.card:has(.ic-emerald) { --accent: linear-gradient(90deg, #10b981, #0d9488); }
+.card:has(.ic-gold) { --accent: linear-gradient(90deg, #f59e0b, #f97316); }
+.card:has(.ic-sky) { --accent: linear-gradient(90deg, #0ea5e9, #6366f1); }
+.card:has(.ic-coral) { --accent: linear-gradient(90deg, #f43f5e, #ec4899); }
+.audience {
+  background: linear-gradient(90deg, #f5f3ff, #eef2ff, #f0f9ff);
+}
+.audience li {
+  border-color: var(--primary-line);
+}
+.step-card:nth-child(2) .step-num {
+  background: linear-gradient(135deg, #7c3aed, #c026d3);
+}
+.mini-card {
+  background: linear-gradient(180deg, #ffffff, #fbfbff);
+}
+.section-tint {
+  background:
+    radial-gradient(600px 400px at 100% 0%, rgba(124, 58, 237, 0.1), transparent 70%),
+    radial-gradient(500px 360px at 0% 100%, rgba(16, 185, 129, 0.08), transparent 70%),
+    var(--bg-tint);
+}
+.final-cta {
+  background: linear-gradient(120deg, #312e81 0%, #4f46e5 45%, #7c3aed 100%);
+}
+.final-cta::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.18), transparent 65%);
+}
+.final-cta p {
+  color: #e0e7ff;
+}
+.dl-icon {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* ══ Veltorcode con el logo más grande ══════════════════════════════ */
+.company-card {
+  grid-template-columns: minmax(0, 420px) 1fr;
+  gap: 2rem 2.5rem;
+}
+.company-logo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2172 / 400;
+  object-fit: cover;
+  object-position: 50% 48%;
+  padding: 0;
+  border-radius: 14px;
+}
+.company-pills {
+  grid-column: 1 / -1;
+  max-width: none;
+  justify-content: flex-start;
+}
+@media (max-width: 960px) {
+  .company-card {
+    grid-template-columns: 1fr;
+  }
+  .company-logo {
+    max-width: 480px;
+  }
+  .company-pills {
+    justify-content: center;
+  }
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.15rem);
+}
+.hero-grid {
+  grid-template-columns: 1.3fr 1fr;
+}
+.phone {
+  width: 310px;
+}
+.sf-head strong,
+.sf-head small {
+  white-space: nowrap;
+}
+.sf-head > div {
+  min-width: 0;
+}
+.sf-head .mini-btn {
+  padding: 0.3rem 0.55rem;
+}
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .phone {
+    width: min(310px, 88vw);
+  }
+}
+@media (min-width: 961px) {
+  .company-card {
+    grid-template-columns: minmax(0, 540px) 1fr;
+  }
 }
